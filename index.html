@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google link tag -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/f725222217.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'sora': ["Sora", 'serif'],
+                        'ADLaM': ["ADLaM Display", 'serif']
+
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body class="font-sora">
+    <header class="max-w-screen-2xl mx-auto mb-28  ">
+        <nav class=" bg-[rgb(255,249,244)] flex justify-between items-center  px-4 py-8 md:px-16 lg:px-32 mb-8">
+
+            <div class="flex items-center gap-2">
+                <!-- logo -->
+                <img src="c1-assets/logo-header.png" alt="">
+                <h1 class="text-2xl font-normal hidden lg:block">Browse<span class="text-yellow-400">4</span>Pets
+                </h1>
+            </div>
+
+            <!--nav list -->
+            <div class="hidden lg:block">
+                <ul class="flex space-x-4">
+                    <li><a class="text-xl font-normal" href="">Find a pet</a></li>
+                    <li><a class="text-xl font-normal" href="">Breeds</a></li>
+                    <li><a class="text-xl font-normal" href="">Contact us</a></li>
+                </ul>
+            </div>
+
+            <!-- log in and Register -->
+            <div class="hidden lg:block">
+                <ul class="flex items-center space-x-3">
+                    <li><a href=""><i class="fa-solid fa-bell text-black text-3xl"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass text-black text-3xl"></i></a></li>
+                    <li><a class="text-xl font-normal" href=""><button
+                                class="border border-yellow-400 px-7 py-2 rounded-lg">Log
+                                in</button></a></li>
+                    <li><a class="text-xl font-normal" href=""><button
+                                class="bg-yellow-400 px-7 py-2 rounded-lg">Register</button></a></li>
+                </ul>
+            </div>
+
+            <!-- shor bar -->
+            <div class="lg:hidden text-3xl text-black">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+        <!-- Banner section start -->
+        <div class="px-4 md:px-16 lg:px-32">
+            <!-- Banner text content start -->
+            <div>
+                <h2 class="font-ADLaM text-4xl md:text-5xl mb-4">Pamper Your Pet, <br> Because They Deserve <br> the
+                    Best</h2>
+                <p class="text-lg md:text-xl font-normal w-4/5 md:w-5/6 lg:w-8/12 mb-4">
+                    Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
+                    make tails wag with joy!
+                </p>
+                <a href=""><button class="bg-yellow-400 px-7 py-2 rounded-lg">Find a pet</button></a>
+            </div>
+            <!-- Banner text content end -->
+
+            <!-- Banner image start -->
+            <div>
+                <img class="w-full" src="c1-assets/cat-big.png" alt="">
+            </div>
+            <!-- Banner image end -->
+        </div>
+        <!-- Banner section end -->
+    </header>
+    <main class="max-w-screen-2xl mx-auto px-4 md:px-16 lg:px-32 mb-28">
+        <!-- Category section start -->
+        <section>
+            <h3 class="font-ADLaM text-3xl font-normal mb-12">Browse By Categories</h3>
+
+            <!-- card section -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- 1st card -->
+                <div class="bg-[#F9DF8A] px-12 py-7 grid grid-cols-1 gap-y-4 items-center text-center rounded-xl">
+                    <div class="bg-white w-24 h-24 flex justify-center items-center mx-auto rounded-full">
+                        <img src="c1-assets/dog-cartoon.png" alt="">
+                    </div>
+
+                    <h5 class="font-ADLaM font-normal text-xl">Dog</h5>
+                    <p class="text-sm">3items</p>
+                </div>
+                <!-- 2nd card -->
+                <div class="bg-[#F9DF8A] px-12 py-7 grid grid-cols-1 gap-y-4 items-center text-center rounded-xl">
+                    <div class="bg-white w-24 h-24 flex justify-center items-center mx-auto rounded-full">
+                        <img src="c1-assets/fish-cartoon.png" alt="">
+                    </div>
+
+                    <h5 class="font-ADLaM font-normal text-xl">Fish</h5>
+                    <p class="text-sm">3items</p>
+                </div>
+                <!-- 3rd card -->
+                <div class="bg-[#F9DF8A] px-12 py-7 grid grid-cols-1 gap-y-4 items-center text-center rounded-xl">
+                    <div class="bg-white w-24 h-24 flex justify-center items-center mx-auto rounded-full">
+                        <img src="c1-assets/cat-cartoon.png" alt="">
+                    </div>
+
+                    <h5 class="font-ADLaM font-normal text-xl">Cat</h5>
+                    <p class="text-sm">3items</p>
+                </div>
+                <!-- 4th card -->
+                <div class="bg-[#F9DF8A] px-12 py-7 grid grid-cols-1 gap-y-4 items-center text-center rounded-xl">
+                    <div class="bg-white w-24 h-24 flex justify-center items-center mx-auto rounded-full">
+                        <img src="c1-assets/bird-cartoon.png" alt="">
+                    </div>
+
+                    <h5 class="font-ADLaM font-normal text-xl">Birds</h5>
+                    <p class="text-sm">3items</p>
+                </div>
+                <!-- 5th card -->
+                <div class="bg-[#F9DF8A] px-12 py-7 grid grid-cols-1 gap-y-4 items-center text-center rounded-xl">
+                    <div class="bg-white w-24 h-24 flex justify-center items-center mx-auto rounded-full">
+                        <img src="c1-assets/mouse-cartoon.png" alt="">
+                    </div>
+
+                    <h5 class="font-ADLaM font-normal text-xl">Small pet</h5>
+                    <p class="text-sm">3items</p>
+                </div>
+                <!-- 6th card -->
+                <div class="bg-[#F9DF8A] px-12 py-7 grid grid-cols-1 gap-y-4 items-center text-center rounded-xl">
+                    <div class="bg-white w-24 h-24 flex justify-center items-center mx-auto rounded-full">
+                        <img src="c1-assets/rabbit-cartoon.png" alt="">
+                    </div>
+
+                    <h5 class="font-ADLaM font-normal text-xl">Rabit</h5>
+                    <p class="text-sm">3items</p>
+                </div>
+            </div>
+        </section>
+        <!-- Category section end -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
